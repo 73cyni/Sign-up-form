@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    max-width: 60rem;
+    width: 100%;
+    padding: 7rem;
+    /* border: 1px solid #000; */
+    color: rgba(0, 0, 0, 0.746);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main h1 {
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.598);
+}
+
+.main form {
+    margin-top: 3rem;
+}
+
+.main form .input_ctn {
+    position: relative;
+    margin-top: 1.8rem;
+    height: 5rem;
+}
+
+.main form .input_ctn input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 3;
+    background-color: transparent;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.746);
+    transition: .3s;
+}
+
+.main form .input_ctn label {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    transition: .3s;
+}
+
+.inputt:focus +.labell {
+    top: -1px;
+    font-size: 1.2rem;
+    z-index: 4;
+    padding: 3px;
+    color: hsl(256, 65%, 57%);
+    font-weight: 600;
+}
+
+.main form .input_ctn input:focus {
+    border: 1px solid hsl(256, 65%, 57%);
+    box-shadow: 0 0 4px hsl(256, 65%, 57%);
+}
+
+.main a {
+    color: hsla(256, 79%, 66%, 0.991);
+}
+
+.main .checkbox {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.main .checkbox label {
+    margin-left: .5rem;
+}
+
+.main button {
+    margin-top: 3.5rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: hsl(256, 65%, 57%);
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 13px 30px hsla(256, 65%, 57%, 0.508);
+    cursor: pointer;
+    border: 2px solid hsl(256, 65%, 57%);
+    transition: .3s;
+}
+
+.main button:hover {
+    background-color: #fff;
+    color: hsl(256, 65%, 57%);
+    font-weight: 700;
+}
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
